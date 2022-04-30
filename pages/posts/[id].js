@@ -33,7 +33,7 @@ function PostPage({ trendingResults, followResults, providers }) {
       onSnapshot(doc(db, 'posts', id), (snapshot) => {
         setPost(snapshot.data());
       }),
-    []
+    [db]
   );
 
   useEffect(
@@ -53,8 +53,8 @@ function PostPage({ trendingResults, followResults, providers }) {
     <div className="">
       <Head>
         <title>
-        `&quot;`
-          {post?.username} on Twitter: "{post?.text}"
+          {' '}
+          {post?.username} on Twitter: `&#34;`{post?.text}`&#34;`
         </title>
         <link rel="icon" href="/favicon.ico"></link>
       </Head>
