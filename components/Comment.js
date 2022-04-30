@@ -41,24 +41,6 @@ function Comment({ comment, id}) {
               {comment?.comment}
             </p>
           </div>
-          {session.user.uid === comment?.id ? (
-            <div
-              className="flex items-center space-x-1 group"
-              onClick={(e) => {
-                e.stopPropagation();
-                deleteDoc(doc(db, 'posts', id, "comments", id));
-                router.push('/');
-              }}
-            >
-              <div className="icon group-hover:bg-red-600/10">
-                <TrashIcon className="h-5 group-hover:text-red-600" />
-              </div>
-            </div>
-          ) : (
-            <div className="">
-        
-            </div>
-          )}
           <div className="icon group flex-shrink-0">
             <DotsHorizontalIcon className="h-5 text-[#6e767d] group-hover:text-[#1d9bf0]" />
           </div>
