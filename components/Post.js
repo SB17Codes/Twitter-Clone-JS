@@ -15,7 +15,7 @@ import {
   HeartIcon,
   ShareIcon,
   SwitchHorizontalIcon,
-  TrashIcon,
+  TrashIcon,ˆ
 } from '@heroicons/react/outline';
 import {
   HeartIcon as HeartIconFilled,

@@ -1,3 +1,5 @@
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+
 import { ArrowLeftIcon } from '@heroicons/react/outline';
 import {
   collection,
